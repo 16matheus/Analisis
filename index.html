@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Documentación Final</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <div class="header__container">
+                
+
+                <a class="header__logo" >Gestión de Calidad de Código</a>
+    
+                
+            </div>
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="#" class="nav__link nav__logo" onclick='document.getElementById("info").innerHTML = "La clave del concepto de la inspección continua es detectar problemas a tiempo, cuando resolverlos sigue siendo barato y fácil. Bajo este modelo, las auditorías de código automatizadas se realizan sobre una base diaria y se colocan a disposición de toda la organización.Se describira la funcionalidad de cada módulo:"'>
+                        <span class="material-icons">&#xe853; </span>
+                        <span class="nav__logo-name">  Salud.sa</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">QA</h3>                         
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                   <span class="material-icons">&#xe8b6;</span>
+                                    <span class="nav__name">Consultas</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite consultar los contratos, muestra información resumen y detalle del mismo, los beneficiarios, las cotizaciones, planes, las cobranzas, los movimientos realizados, sobres, excepciones, resumen vitality por beneficiario y simulador del cashback, consultar los gestores de contrato."'>Contratos</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Descarga certificados por número de contrato, producto y filtros de fecha."'>Reporte Certificado</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Descarga reporte de los contratos con preexistencia declaradas y no declaradas por región y un rango de fecha."'>Reporte Preexistencia</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Descarga datos generales del contrato, prestaciones, pagos efectuados y siniestralidad."'>Estado de Cuenta</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite registrar/consultar la medicina continua de un beneficiario."'>Medicacíon Continua</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite actualizar la lista de vendedores."'>Representante Negocio</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe5d5;</span>
+                                    <span class="nav__name">Actualizaciones</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consulta y actualización de clientes."'>Persona</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consultar, actualizar empresas."'>Empresa</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-spreadsheet'></i>
+                                    <span class="nav__name">Brókers</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consultar, actualizar grupo de brokers."'>Grupo de Brókers</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consultar, actualizar broker."'>Brókers</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite reasignar los contratos, listas y seguros de un Broker."'>Reasignación Brókers</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Reporte de las reasignaciones realizada al broker."'>Reporte Reasignación</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "No se usa."'>Brókers Términos y Condiciones</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "No se usa."'>Notificaciones - Categorías</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "No se usa."'>Notificaciones - Envios</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "No se usa."'>Notificaciones - Categorías</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "No se usa."'>Usuarios Salud</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-spreadsheet'></i>
+                                    <span class="nav__name">SmartPlan</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consultar, actualizar grupos corporativo."'>Grupos Corporativos</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consultar, actualizar empresas."'>Empresa</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consultar, actualizar facturas."'>Prefacturas Confirmadas</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Plantilla de términos y condiciones de smart plan."'>Términos y Condiciones</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "No se usa."'>Usuarios Salud</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "No se usa."'>Notificaciones - Categorías</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "No se usa."'>Notificaciones - Envios</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consultar, actualizar el listado de extensiones de contratos smart plan."'>Extensiones</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consultar, actualizar el listado de renovaciones de contratos smart plan."'>Renovaciones</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consultar, actualizar el listado de extensiones de contratos smart plan."'>Extensiones</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consultar, actualizar el listado de renovaciones de contratos smart plan."'>Renovaciones</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Muestra las solicitudes de traspasos en los estados: Pendiente de procesar, procesando, completado, con error."'>Traspasos</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Reporte de cruce de información con el registro civil."'>Reporte Offline RC</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Listado de archivos de reclamos subidos por empresa."'>Reclamos Manuales</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe91f;</span>
+                                    <span class="nav__name">Autorizaciones</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Registro y consulta de autorizaciones por contrato."'>Autorización</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Muestra trazabilidad de las autorizaciones."'>Tracking</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Reporte Autorizaciones"'>Reporte Autorizaciones</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Reporte Autorizaciones In Situ"'>Reporte Autorizaciones In Situ</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consultar, actualizar el catálogo para las observaciones de una autorización."'>Catalogo Observaciones</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consultar, actualizar paquete de procedimientos para autorizaciones."'>Paquetes</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xea0e;</span>
+                                    <span class="nav__name">ODAS</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consultar, anular y enviar por correo una ODA."'>Órdenes Consulta</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consultar ODA tipo laboratorio y farmacia."'>Laboratorios y Farmacias</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Reporte ODAS"'>Reporte ODAS</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Reporte ODAS Laboratorios y Farmacias"'>Reporte Laboratorios y Farmacias</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xea18;</span> 
+                                    <span class="nav__name">Transacciones</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite realizar cambios y transacciones por contrato."'>Transacciones</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite descargar reporte por tipos de movimiento."'>Reporte Movimientos</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite descargar reporte por tipos de financiamiento."'>Reporte Financiamiento(NLH)</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Reporte de contratos con la fecha fin desgravamen."'>Reporte Desgravamen por Vencer</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Consulta de las remesas por banco."'>Transferencia de Remesa</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Muestra reporte de contratos anulados según el filtro de fecha."'>Archivo texto anulados</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Carga código UMIS para beneficiarios de contrato XPR."'>Cargar UMIS XPR</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe91f;</span>
+                                    <span class="nav__name">Prestadores</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, consultar, actualizar prestadores y también permite registrar N sucursales por prestador y sus contactos."'>Consultar Prestadores</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite agendar cita con un centro médico."'>Cita Centros</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite agendar cita con un médico."'>Citas Destacados</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite consultas la citas."'>Consultar Citas</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite consulta lista de médicos con su califación."'>Consulta Calificación</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite consultar o actualizar los valores de latitud y longitud por prestador."'>Update Coordenadas Prestadorea</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe241;</span>    
+                                    <span class="nav__name">Catálogos</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite consultar los diagnósticos, se puede filtrar si es o no congénito."'>Diagnósticos</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite consultar los procedimientos con sus valores puntos Salus, Harvard y MacGraw."'>Procedimientos</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite registrar los valores puntos del tipo individual o corporativo."'>Valores de Punto</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "No se usa."'>Tarifas Diferenciadas</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe7fc;</span>
+                                    <span class="nav__name">Auditorías</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Muestra bitácora de las acciones realizadas en el sistema por usuario."'>Auditorías Sistema</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe8b8;</span>
+                                    <span class="nav__name">Administración</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Carga los usuarios del active directo y le asocia un rol."'>Usuarios</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, actualizar roles."'>Roles</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite registrar correos para procesos interno de armonix y los correos de los usuasrios."'>Emails</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xf028;</span>
+                                    <span class="nav__name">Facturación</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite configurar la dirección de ws del sri, el correo de notificaciones."'>Configuración</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Muestra el log de ejecución de un proceso de facturación."'>Log Errores</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite generar documentos con facturas y notas de crédito, generar el log de errores de la facturación, consulta de docuemntos generaros, y reporcesar la facturación."'>Proceso Facturación</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Proceso de saldos a favor por contrato."'>Saldos a Favor</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite generar nota de crédito a una factura en estado cobrada."'>Notas de Crédito</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite cargar un archivo con el detalle de notas de crédito a generar."'>Notas de Crédito Masivas</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite programar la ejecución de las notas de crédito PCA o Masivas."'>Tareas Programadas</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite descargar reporte de: contratos por cobrar y en mormora - Facturas emitidas - Consulta de problemas."'>Reportes</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite consultar un documento electrónico."'>Consulta Documentos</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "No se usa."'>Cotizaciones</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite consultar el listado de descuentos."'>Descuentos</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Sirve para llevar de las Ordenes de compra."'>Ordenes de Compra</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "No se usa."'>Ind. Previa</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe8f9;</span>
+                                    <span class="nav__name">Recaudos</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite subir archivo para procesar cobros a Pichincha."'>Saludsa Pay</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = ""'>Botón Pago</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Muestra listado con el nombre del archivo de las intuciones de cobranza."'>Archivos Debitos Instituciones</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite registrar a caja la primera cuota."'>Ingreso Caja</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = ""'>Carga Respuestas</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = ""'>Debito Bancario</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe158;</span>
+                                    <span class="nav__name">Sobres</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite visualizar el estado de los sobres y sus detalles por contrato."'>Sobres por Contrato</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite visualizar el listado de sobres por un filtro de fecha."'>Reportes</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite realizar la asignación de sobres a un Consultor."'>Asignar</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Consulta sobres asignados pendientes de liquidar."'>Consultor</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite realizar la gestipon de devolución de un sobre."'>Devolución</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "No se usa."'>Autorizar</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite ejecutar el reporte de la reserva seleccionando el mes y año de ejecución."'>Reportes Reserva</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Cambia de estado las acreditaciones diarias IND y COR. Genera un reporte por oficina para revisión de tesorería."'>Generación Traspasos 6(ASUME PAGADO) a 27(TRANSFERIDO)</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite anular un sobre."'>Anular</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe158;</span>
+                                    <span class="nav__name">Credito</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite registrar creditos hospitalios o ambulatorios por contrato."'>Creditos por Contrato</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite descargar reporte de los creditos ingresados."'>Reportes</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite asignar auditor o liquidar a un crédito, ó anular un crédito."'>Asignar</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Consulta creditos asignados pendiente de liquidar."'>Auditor/Liquidador</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "No se usa."'>Autorizar</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Saca el reporte de reservas de escritorio."'>Reportes Reserva</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe53e;</span>
+                                    <span class="nav__name">Retención</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite aplicar un descuento para renovación del contrato por motivo de retención."'>Consulta</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Muestra documentos varios en formato pdf con información del plan."'>Información de retención</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Muestra el reporte de la retenciones realizadas y con el motivo en el campo decisión."'>Reportes</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite parametrizar el valor de descuento para cada jefaura de SAC."'>Parametrizacíon descuento</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Sirve para autorizar un porcentaje de descuento de retención al cliente."'>Aprobación</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite realizar la gestión de retención de clientes y luego revisar el caso"'>Ret. Clientes</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xf1fc;</span>
+                                    <span class="nav__name">Comercial</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "No se usa."'>Ejecutivo Comercial</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, asignar, anular, reactivar y también descargar reporte de fun."'>Administración de Funes</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe02f;</span>
+                                    <span class="nav__name">Contabilidad</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite descargar en excel el reporte de la reservas en curso por mes."'>Reporte Reservas</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite configurar los días y hora de ejecución automáticas de las reservas."'>Configuración Reservas</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite la carga del estado de cuenta."'>Carga Estado Cuenta Bancaria</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite consultar retenciones."'>Consulta de Retenciones por Fact / Prest</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe227;</span>
+                                    <span class="nav__name">Cobranzas</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite agendar citas para la cobranza de contratos por cobrar o en mora, también permite descargar un reporte de las citas."'>Gestión de la Cobranza</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite imprimir el recibo de cobro."'>Impresión de Recibos</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Genera reporte de cuentas por cobrar de morosos."'>Reportes</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = ""'>Planificador</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Genera reporte de contratos bloqueados por primera vez por mora."'>Mora Primera Vez</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Contratos que no pudieron ser contactados en la cobranza."'>No Contactados</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Reporte de los compromisos de pago registrados."'>Compromiso Pago</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe02f;</span>
+                                    <span class="nav__name">Portal Clientes</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite buscar un cliente y editar los datos."'>Administración</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-spreadsheet'></i>
+                                    <span class="nav__name">Servicios adicionales</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = ""'>Listado de bases existentes</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = ""'>Proveedor y Pólizas</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = ""'>Tickets</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = ""'>Reporte estado de Polizas</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe8b8;</span>
+                                    <span class="nav__name">Liquidaciones</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite ingresar reclamo o alcance a un reclamo, y liquidarlo."'>Liquidación</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Reporte para mostrar las excepiones."'>Excepciones</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite generar el estado de cuenta de liquidaciones y detalles de pago por prestador."'>Reimpresion en lotes</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "No se usa."'>Autorización Transferencia</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = ""'>Reporte Cuadre Diario Costo</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = ""'>Prepagos</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = ""'>Cuadre Costo Mensual</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe8b8;</span>
+                                    <span class="nav__name">Masivos</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite cargar archivo con reclamos de presatdores médicos y generar los reclamos identificando que reclamo se va a pagar y cuales no se pagan con su justifación."'>Masivos</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite dar de alta un grupo de contratos para universidades."'>Masivos Universidades</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe53e;</span>
+                                    <span class="nav__name">Comisiones</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite parametrizar: Niveles, Tipos, Subtipos, canalas, rangos, salas, bonos, bonos plan carro, premio mejor equipo, bono cumpliemiento director, premios sala, becas, alimentación/transporte."'>Parametrización</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, actualizar los montos y porcentajes de presupuestos por canal, sucursal."'>Presupuestos</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite parametrizar el % de la comisión por referidos."'>Referidos</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite crear, actualizar los premios."'>Parametrización Premios</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Consulta de premios y bonos."'>Premios y bonos</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Consulta de las comisiones ganadas."'>Consultas</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Consulta de comisiones por broker."'>Consultas Brokers</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = ""'>Semáforo</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Consulta de movimientos de suscripción y anulación pro agente de venta."'>Movimientos Manuales</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <span class="material-icons">&#xe53e;</span>
+                                    <span class="nav__name">Corporativo</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite consultar planes del tipo COR."'>Plan</a>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-spreadsheet'></i>
+                                    <span class="nav__name">Contratos PCA</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite cargar archivo para contratos tipo PCA."'>Cargar archivo</a>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-spreadsheet'></i>
+                                    <span class="nav__name">Pago Inteligente</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Genera arhivos con el detalle de pagos para enviarlo a los bancos. Carga respuesta de las acreditaciones realizadas. Permite consultar "'>Pago Inteligente</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite generar archivos para el pago de cashback para enviar al banco. Permite consultar el estado del pago y los rebotes. Permite genrar una simulación del cashback."'>Pagos Vitality</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite generar archivo para el pago por ventanilla y enviarlo al banco."'>Pagos Ventanilla</a>
+                                        <a href="#" class="nav__dropdown-item" onclick='document.getElementById("info").innerHTML = "Permite generar el reporte de pagos inteligente con filtyros de fecha y región."'>Consultas</a>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            
+                        </div>
+    
+                        
+
+                    </div>
+
+                
+            </nav>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <main>
+            <section>
+                <h1>Información</h1>
+                <p id="info">La clave del concepto de la inspección continua es detectar problemas a tiempo, cuando resolverlos sigue siendo barato y fácil. Bajo este modelo, las auditorías de código automatizadas se realizan 
+                    sobre una base diaria y se colocan a disposición de toda la organización.</p>
+                <p>Se describira la funcionalidad de cada módulo:</p>
+                <table border="1">
+                    
+                    <tbody>
+                      <tr>
+                        <td></td>
+                        <th>Información</th>
+                        <th>Casos de prueba</th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <td>Hisroria de usuario 1 </td>
+                        <td id='info2'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium necessitatibus saepe fuga laboriosam numquam culpa nem
+                            o odio unde. Provident optio ea harum, praesentium iure excepturi consequuntur maxime sint est quasi?              </td>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <td>Historia de usuario 2 </td>
+                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium necessitatibus saepe fuga laboriosam numquam culpa nem
+                            o odio unde. Provident optio ea harum, praesentium iure excepturi consequuntur maxime sint est quasi? </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </section>
+        </main>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/edit.js"></script>
+        
+    </body>
+</html>
